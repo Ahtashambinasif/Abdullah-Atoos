@@ -1,0 +1,1526 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abudullah Atoos</title>
+
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+  <link rel="icon" type="image/x-icon" href="Images/Atoos-bg-remove.ico">
+  <style>
+    body {
+
+      overflow-x: hidden; 
+
+      background-image: url('Images/back.png');
+      background-repeat: none;
+      width: 100;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+
+    }
+
+
+    #responsive-image {
+
+      cursor: pointer;
+      max-width: 100%;
+      /* Allow the image to scale down */
+      height: auto;
+      /* Maintain the aspect ratio */
+      width: 100%;
+      /* Set a maximum width */
+      max-width: 190px;
+      /* Limit the maximum width to 200 pixels */
+      display: inline;
+      /* Make the image a block element */
+      /* Center horizontally if needed */
+      margin-left:56px; 
+
+    }
+
+    #footer-image {
+      cursor: pointer;
+      max-width: 100%;
+      /* Allow the image to scale down */
+      height: auto;
+      /* Maintain the aspect ratio */
+      width: 100%;
+      /* Set a maximum width */
+      max-width: 190px;
+      /* Limit the maximum width to 200 pixels */
+      display: inline;
+    }
+
+    .fadeIn {
+      -webkit-animation-name: fadeIn;
+      animation-name: fadeIn;
+      -webkit-animation-duration: 3s;
+      animation-duration: 4s;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both;
+    }
+
+
+
+
+    @-webkit-keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+
+
+
+    #responsive-image:hover {
+
+
+
+      background-color: rgba(240, 248, 255, 0);
+
+
+    }
+
+    #engin {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+
+
+
+
+    }
+
+   
+
+    #battery {
+      display: block;
+      width: 250px;
+      padding-left: 27px;
+    }
+
+    #Tire {
+      display: block;
+      width: 265px;
+      padding-left: 27px;
+    }
+
+    #suspension {
+      display: block;
+      width: 200px;
+      padding-left: 27px;
+    }
+
+    #headlights {
+      display: block;
+      width: auto;
+      padding-right: 60px;
+    }
+
+    #filter {
+      display: block;
+      width: 220px;
+      padding-left: 10px;
+    }
+
+    #mirror {
+      display: block;
+      width: 265px;
+    }
+
+    #piston {
+      display: block;
+      width: 265px;
+      padding-right: 13px;
+    }
+
+  
+    .lists:hover {
+      border-bottom: 2px solid #e5444c;
+      cursor: pointer;
+
+    }
+
+    .fadeup {
+      -webkit-animation-name: fadeInUp;
+      animation-name: fadeInUp;
+      -webkit-animation-duration: 1s;
+      animation-duration: 1s;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both;
+    }
+
+    @-webkit-keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        -webkit-transform:
+          translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+      }
+
+      100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+      }
+    }
+
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%,
+            0);
+      }
+
+      100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+      }
+    }
+
+
+    .fadeleft {
+      -webkit-animation-name: slideInLeft;
+      animation-name: slideInLeft;
+      -webkit-animation-duration: 1s;
+      animation-duration: 1s;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both;
+    }
+
+    @-webkit-keyframes slideInLeft {
+      0% {
+        -webkit-transform:
+          translateX(-100%);
+        transform: translateX(-100%);
+        visibility: visible;
+      }
+
+      100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+      }
+    }
+
+    @keyframes slideInLeft {
+      0% {
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+        visibility:
+          visible;
+      }
+
+      100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+      }
+    }
+
+
+
+
+
+    .btn {
+      background-color: red;
+    }
+
+
+
+    #engin {
+      width: 211px;
+      margin-right: 55px;
+    }
+
+    @media only screen and (max-width:768px) {
+      #engin {
+        width: 211px;
+        margin-right: 101px;
+      }
+
+    }
+
+    @media only screen and (max-width:320px) {
+      #engin {
+        width: 211px;
+        margin-right: 30px;
+      }
+
+      .firstcontent {
+        margin-left: 28px;
+      }
+
+    }
+
+   
+
+
+    @media only screen and (max-width:425px) {
+      #header{
+        margin-left:53px;
+      }
+      #responsive-image{
+        margin-right: 70px;
+        padding-bottom: 25px;
+      }
+      #content{
+        margin-right: 27px;
+      }
+      #last{
+        margin-left: 45px;
+      }
+    }
+    @media only screen and (max-width:375px) {
+      #engin {
+        width: 211px;
+        margin-right: 75px;
+
+
+      }
+#nav{
+ 
+ font-size: 12px;
+    }
+
+
+    #last{
+      
+      margin-left: 41px;
+    }
+    }
+
+  
+
+
+    #overlay {
+
+
+      display: none;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      background: #999;
+      width: 100%;
+      height: 100%;
+      opacity: 0.8;
+      z-index: 100;
+    }
+
+    #popup {
+
+
+      display: none;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      background: #fff;
+      width: 500px;
+      height: 500px;
+      margin-left: -250px;
+      /*Half the value of width to center div*/
+      margin-top: -250px;
+      /*Half the value of height to center div*/
+      z-index: 200;
+    }
+
+    #popupclose {
+      float: right;
+      padding: 10px;
+      cursor: pointer;
+    }
+
+    #popupcontent {
+      padding: 10px;
+    }
+
+    #button {
+      cursor: pointer;
+    }
+
+
+
+
+
+
+    /* 2nd */
+    #overlay2 {
+
+
+      display: none;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      background: #999;
+      width: 100%;
+      height: 100%;
+      opacity: 0.8;
+      z-index: 100;
+    }
+
+    #popup2 {
+
+
+      display: none;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      background: #fff;
+      width: 500px;
+      height: 500px;
+      margin-left: -250px;
+      /*Half the value of width to center div*/
+      margin-top: -250px;
+      /*Half the value of height to center div*/
+      z-index: 200;
+    }
+
+    #popupclose2 {
+      float: right;
+      padding: 10px;
+      cursor: pointer;
+    }
+
+    #popupcontent2 {
+      padding: 10px;
+    }
+
+    #button9 {
+      cursor: pointer;
+    }
+
+
+    /* 3rd */
+    #overlay3 {
+
+
+      display: none;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      background: #999;
+      width: 100%;
+      height: 100%;
+      opacity: 0.8;
+      z-index: 100;
+    }
+
+    #popup3 {
+
+
+      display: none;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      background: #fff;
+      width: 500px;
+      height: 500px;
+      margin-left: -250px;
+      /*Half the value of width to center div*/
+      margin-top: -250px;
+      /*Half the value of height to center div*/
+      z-index: 200;
+    }
+
+    #popupclose3 {
+      float: right;
+      padding: 10px;
+      cursor: pointer;
+    }
+
+    #popupcontent3 {
+      padding: 10px;
+    }
+
+    #button10 {
+      cursor: pointer;
+    }
+
+
+
+    /* 4th */
+    #overlay4 {
+
+
+      display: none;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      background: #999;
+      width: 100%;
+      height: 100%;
+      opacity: 0.8;
+      z-index: 100;
+    }
+
+    #popup4 {
+
+
+      display: none;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      background: #fff;
+      width: 500px;
+      height: 500px;
+      margin-left: -250px;
+      /*Half the value of width to center div*/
+      margin-top: -250px;
+      /*Half the value of height to center div*/
+      z-index: 200;
+    }
+
+    #popupclose4 {
+      float: right;
+      padding: 10px;
+      cursor: pointer;
+    }
+
+    #popupconten4 {
+      padding: 10px;
+    }
+
+    #button11 {
+      cursor: pointer;
+    }
+
+
+
+    /* 5th */
+    #overlay5 {
+
+
+      display: none;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      background: #999;
+      width: 100%;
+      height: 100%;
+      opacity: 0.8;
+      z-index: 100;
+    }
+
+    #popup5 {
+
+
+      display: none;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      background: #fff;
+      width: 500px;
+      height: 500px;
+      margin-left: -250px;
+      /*Half the value of width to center div*/
+      margin-top: -250px;
+      /*Half the value of height to center div*/
+      z-index: 200;
+    }
+
+    #popupclose5 {
+      float: right;
+      padding: 10px;
+      cursor: pointer;
+    }
+
+    #popupconten5 {
+      padding: 10px;
+    }
+
+    #button12 {
+      cursor: pointer;
+    }
+    /* 7th */
+    #overlay7 {
+
+
+      display: none;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      background: #999;
+      width: 100%;
+      height: 100%;
+      opacity: 0.8;
+      z-index: 100;
+    }
+
+    #popup7 {
+
+
+      display: none;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      background: #fff;
+      width: 500px;
+      height: 500px;
+      margin-left: -250px;
+      /*Half the value of width to center div*/
+      margin-top: -250px;
+      /*Half the value of height to center div*/
+      z-index: 200;
+    }
+
+    #popupclose7 {
+      float: right;
+      padding: 10px;
+      cursor: pointer;
+    }
+
+    #popupconten7 {
+      padding: 10px;
+    }
+
+    #button14 {
+      cursor: pointer;
+    }
+    /* 8th */
+    #overlay8 {
+
+
+      display: none;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      background: #999;
+      width: 100%;
+      height: 100%;
+      opacity: 0.8;
+      z-index: 100;
+    }
+
+    #popup8 {
+
+
+      display: none;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      background: #fff;
+      width: 500px;
+      height: 500px;
+      margin-left: -250px;
+      /*Half the value of width to center div*/
+      margin-top: -250px;
+      /*Half the value of height to center div*/
+      z-index: 200;
+    }
+
+    #popupclose8 {
+      float: right;
+      padding: 10px;
+      cursor: pointer;
+    }
+
+    #popupconten8 {
+      padding: 10px;
+    }
+
+    #button15 {
+      cursor: pointer;
+    }
+
+
+
+
+
+  </style>
+</head>
+
+<body style="background-image:url('Images/back.png')">
+
+
+  <style>
+    .buy {
+      background-color: #e5444c;
+      color: black
+    }
+    .buy:hover{
+      background-color: #d86971;
+
+    }
+
+
+
+  </style>
+
+
+  <header class="text-gray-600 body-font">
+    <div id="header" class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+
+      <a href="index.html"><img class="fadeIn" id="responsive-image" src="Images/Atoos-bg-remove.png" alt=""></a>
+
+
+      <nav id="nav" style="margin-right: 25px; 
+      "
+        class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+        <a href="index.html" class="mr-5 hover:text-gray-900 lists">Products</a>
+        <a href="Categorizes.html" class="mr-5 hover:text-gray-900 lists">Categories</a>
+        <a href="contact_us.html" class="mr-5 hover:text-gray-900 lists">Contact Us</a>
+        <a href="About-us.html" class="mr-5 hover:text-gray-900 lists">About Us</a>
+      </nav>
+
+
+
+    </div>
+  </header>
+
+
+
+
+  
+
+
+  <section class="text-gray-600 body-font">
+    <div style="margin-left: 70px; margin: right 70px;" class="container px-5 py-24 mx-auto fadeup">
+      <div class="flex flex-wrap -m-4">
+        <div id="content" class="lg:w-1/4 md:w-1/2 p-4 w-full firstcontent">
+          <a id="engin" class="block relative h-48 rounded overflow-hidden">
+            <img id="engin" style="height:100%;" alt="Engin" class="object-cover object-center w-full h-full block pulse"
+              src="Images/engin.png">
+          </a>
+          <div class="mt-4">
+            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Engin</h3>
+            <h2 class="text-gray-900 title-font text-lg font-medium">BMW B38</h2>
+            <p class="mt-1">Rs 10 Lack </p>
+
+
+
+
+        
+
+              <button id="button"
+                class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0 buy">Buy
+                Now
+                <svg id="arrow" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                  stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </button>
+         
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          </div>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 p-4 w-full firstcontent">
+          <a class="block relative h-48 rounded overflow-hidden">
+            <img id="battery" alt="ecommerce" class="object-cover object-center w-full h-full block"
+              src="Images/battery.png">
+          </a>
+          <div class="mt-4">
+            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Battery</h3>
+            <h2 class="text-gray-900 title-font text-lg font-medium">Bosch BLP5S</h2>
+            <p class="mt-1">Rs 40 Thousands </p> <button id="button9"
+              class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0 buy">Buy
+              Now
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+                <path d="M5 12h14M12 5l7 7-7 7"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 p-4 w-full firstcontent">
+          <a class="block relative h-48 rounded overflow-hidden">
+            <img id="Tire" alt="ecommerce" class="object-cover object-center w-full h-full block" src="Images/Tire.png">
+          </a>
+          <div class="mt-4">
+            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Tire</h3>
+            <h2 class="text-gray-900 title-font text-lg font-medium">BMW X3</h2>
+            <p class="mt-1">Rs 25 Thousands </p> <button id="button10"
+              class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0 buy">Buy
+              Now
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+                <path d="M5 12h14M12 5l7 7-7 7"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 p-4 w-full firstcontent">
+          <a class="block relative h-48 rounded overflow-hidden">
+            <img id="suspension" alt="ecommerce" class="object-cover object-center w-full h-full block"
+              src="Images/suspension.png">
+          </a>
+          <div class="mt-4">
+            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Suspension</h3>
+            <h2 class="text-gray-900 title-font text-lg font-medium">SR3</h2>
+            <p class="mt-1">Rs 7 Thousands </p> <button id="button11"
+              class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0 buy">Buy
+              Now
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+                <path d="M5 12h14M12 5l7 7-7 7"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 p-4 w-full firstcontent ">
+          <a class="block relative h-48 rounded overflow-hidden">
+            <img id="headlights" alt="ecommerce" class="object-cover object-center w-full h-full block"
+              src="Images/headlights.png">
+          </a>
+          <div class="mt-4">
+            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">headlights</h3>
+            <h2 class="text-gray-900 title-font text-lg font-medium">H3R</h2>
+            <p class="mt-1">Rs 10 Thousands </p> <button id="button12"
+              class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0 buy">Buy
+              Now
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+                <path d="M5 12h14M12 5l7 7-7 7"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 p-4 w-full firstcontent">
+          <a class="block relative h-48 rounded overflow-hidden">
+            <img id="filter" alt="ecommerce" class="object-cover object-center w-full h-full block"
+              src="Images/filter.png">
+          </a>
+          <div class="mt-4">
+            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Filter</h3>
+            <h2 class="text-gray-900 title-font text-lg font-medium">F80</h2>
+            <p class="mt-1">Rs 4 Thousands </p> <button id="button13"
+              class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0 buy">Buy
+              Now
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+                <path d="M5 12h14M12 5l7 7-7 7"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 p-4 w-full firstcontent">
+          <a class="block relative h-48 rounded overflow-hidden">
+            <img id="mirror" alt="ecommerce" class="object-cover object-center w-full h-full block"
+              src="Images/mirror.png">
+          </a>
+          <div class="mt-4">
+            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Mirror</h3>
+            <h2 class="text-gray-900 title-font text-lg font-medium">M6U</h2>
+            <p class="mt-1">Rs 4 Thousands Rupees</p> <button id="button14"
+              class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0 buy">Buy
+              Now
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+                <path d="M5 12h14M12 5l7 7-7 7"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 p-4 w-full firstcontent">
+          <a class="block relative h-48 rounded overflow-hidden">
+            <img id="piston" alt="ecommerce" class="object-cover object-center w-full h-full block"
+              src="Images/piston.png">
+          </a>
+          <div class="mt-4">
+            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Piston</h3>
+            <h2 class="text-gray-900 title-font text-lg font-medium">P6L</h2>
+            <p class="mt-1">Rs 3 Thousands </p> <button id="button15"
+              class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0 buy">Buy
+              Now
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+                <path d="M5 12h14M12 5l7 7-7 7"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <footer class="text-gray-600 body-font">
+
+    <div>
+      <div id="last" class="container px-5 py-6 mx-auto flex items-center sm:flex-row flex-col footer">
+        <a href="index.html" class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+          <img id="footer-image" src="Images/Atoos-bg-remove.png" alt="">
+
+        </a>
+        <p class="text-sm text-gray-500 sm:ml-6 sm:mt-0 mt-4">© 2023 Abdullah Atoos —
+          <a href="https://twitter.com/knyttneve" rel="noopener noreferrer" class="text-gray-600 ml-1"
+            target="_blank">@Abdullah Atoos</a>
+        </p>
+        <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+          <a class="text-gray-500">
+            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+              viewBox="0 0 24 24">
+              <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-500">
+            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+              viewBox="0 0 24 24">
+              <path
+                d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+              </path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-500">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              class="w-5 h-5" viewBox="0 0 24 24">
+              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-500">
+            <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+              stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+              <path stroke="none"
+                d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+              <circle cx="4" cy="4" r="2" stroke="none"></circle>
+            </svg>
+          </a>
+        </span>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+  <div id="overlay3"></div>
+  <div id="popup3">
+    <div id="popupcontrols3">
+      <span id="popupclose3">X</span>
+    </div>
+    <style>
+      #order-summary3{
+        text-align: center;
+        font-size: 25px;
+        
+      }
+      #details3{
+        margin-top: 60px;
+    margin-left: 120px;
+    
+      }
+      .list-order{
+        font-size: 21px;
+      }
+      #button02{
+        margin-left: 183px;
+    margin-top: 67px;
+      }
+    </style>
+    <div id="popupcontent3">
+      <h1 id="order-summary3"><strong>Order Summary</strong></h1>
+      <div id="details3">
+      <ul >
+        <li class="list-order"><strong>Item Name:</strong> BMW B38</li>
+        <li class="list-order"><strong>Category:</strong> Engin</li>
+        <li class="list-order"><strong>Item Price:</strong> Rs. 1,000,000 /- </li>
+        <li class="list-order"><strong>Deilivery Fee:</strong> Rs. 10,000 /-</li>
+        <li class="list-order"><strong>Total Price:</strong> Rs. 1,010,000 /-</li>
+        
+    
+      </ul>
+    </div>
+      <p>
+
+      </p>
+
+      <button id="button02"
+      class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0 buy">Place Order
+      </path>
+      </svg>
+    </button>
+    </div>
+       
+
+
+
+  <div id="overlay"></div>
+  <div id="popup">
+    <div id="popupcontrols">
+      <span id="popupclose">X</span>
+    </div>
+    <style>
+      #order-summary{
+        text-align: center;
+        font-size: 25px;
+        
+      }
+      #details{
+        margin-top: 60px;
+    margin-left: 120px;
+    
+      }
+      .list-order{
+        font-size: 21px;
+      }
+      #button1{
+        margin-left: 183px;
+    margin-top: 67px;
+      }
+    </style>
+    <div id="popupcontent">
+      <h1 id="order-summary"><strong>Order Summary</strong></h1>
+      <div id="details">
+      <ul >
+        <li class="list-order"><strong>Item Name:</strong> BMW B38</li>
+        <li class="list-order"><strong>Category:</strong> Engin</li>
+        <li class="list-order"><strong>Item Price:</strong> Rs. 1,000,000 /- </li>
+        <li class="list-order"><strong>Deilivery Fee:</strong> Rs. 10,000 /-</li>
+        <li class="list-order"><strong>Total Price:</strong> Rs. 1,010,000 /-</li>
+        
+    
+      </ul>
+    </div>
+      <p>
+
+      </p>
+
+      <button id="button1"
+      class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0 buy">Place Order
+      </path>
+      </svg>
+    </button>
+    </div>
+
+
+
+
+    <!-- 2nd -->
+  <div id="overlay2"></div>
+  <div id="popup2">
+    <div id="popupcontrols2">
+      <span id="popupclose2">X</span>
+    </div>
+    <style>
+      #order-summary2{
+        text-align: center;
+        font-size: 25px;
+        
+      }
+      #details2{
+        margin-top: 60px;
+    margin-left: 120px;
+    
+      }
+      .list-order{
+        font-size: 21px;
+      }
+      #button01{
+        margin-left: 183px;
+    margin-top: 67px;
+      }
+    </style>
+    <div id="popupcontent2">
+      <h1 id="order-summary2"><strong>Order Summary</strong></h1>
+      <div id="details2">
+      <ul >
+        <li class="list-order"><strong>Item Name:</strong> BMW B38</li>
+        <li class="list-order"><strong>Category:</strong> Engin</li>
+        <li class="list-order"><strong>Item Price:</strong> Rs. 1,000,000 /- </li>
+        <li class="list-order"><strong>Deilivery Fee:</strong> Rs. 10,000 /-</li>
+        <li class="list-order"><strong>Total Price:</strong> Rs. 1,010,000 /-</li>
+        
+    
+      </ul>
+    </div>
+      <p>
+
+      </p>
+
+      <button id="button01"
+      class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0 buy">Place Order
+      </path>
+      </svg>
+    </button>
+    </div>
+
+
+
+    <!-- 3rd -->
+  <div id="overlay4"></div>
+  <div id="popup4">
+    <div id="popupcontrols4">
+      <span id="popupclose4">X</span>
+    </div>
+    <style>
+      #order-summary4{
+        text-align: center;
+        font-size: 25px;
+        
+      }
+      #details4{
+        margin-top: 60px;
+    margin-left: 120px;
+    
+      }
+      .list-order{
+        font-size: 21px;
+      }
+      #button04{
+        margin-left: 183px;
+    margin-top: 67px;
+      }
+    </style>
+    <div id="popupcontent4">
+      <h1 id="order-summary4"><strong>Order Summary</strong></h1>
+      <div id="details4">
+      <ul >
+        <li class="list-order"><strong>Item Name:</strong> BMW B38</li>
+        <li class="list-order"><strong>Category:</strong> Engin</li>
+        <li class="list-order"><strong>Item Price:</strong> Rs. 1,000,000 /- </li>
+        <li class="list-order"><strong>Deilivery Fee:</strong> Rs. 10,000 /-</li>
+        <li class="list-order"><strong>Total Price:</strong> Rs. 1,010,000 /-</li>
+        
+    
+      </ul>
+    </div>
+      <p>
+
+      </p>
+
+      <button id="button04"
+      class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0 buy">Place Order
+      </path>
+      </svg>
+    </button>
+    </div>
+    <!-- 5th -->
+  <div id="overlay5"></div>
+  <div id="popup5">
+    <div id="popupcontrols5">
+      <span id="popupclose5">X</span>
+    </div>
+    <style>
+      #order-summary5{
+        text-align: center;
+        font-size: 25px;
+        
+      }
+      #details5{
+        margin-top: 60px;
+    margin-left: 120px;
+    
+      }
+      .list-order{
+        font-size: 21px;
+      }
+      #button05{
+        margin-left: 183px;
+    margin-top: 67px;
+      }
+    </style>
+    <div id="popupcontent5">
+      <h1 id="order-summary5"><strong>Order Summary</strong></h1>
+      <div id="details5">
+      <ul >
+        <li class="list-order"><strong>Item Name:</strong> BMW B38</li>
+        <li class="list-order"><strong>Category:</strong> Engin</li>
+        <li class="list-order"><strong>Item Price:</strong> Rs. 1,000,000 /- </li>
+        <li class="list-order"><strong>Deilivery Fee:</strong> Rs. 10,000 /-</li>
+        <li class="list-order"><strong>Total Price:</strong> Rs. 1,010,000 /-</li>
+        
+    
+      </ul>
+    </div>
+      <p>
+
+      </p>
+
+      <button id="button05"
+      class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0 buy">Place Order
+      </path>
+      </svg>
+    </button>
+    </div>
+
+    <!-- 6th -->
+  <div id="overlay6"></div>
+  <div id="popup6">
+    <div id="popupcontrols6">
+      <span id="popupclose6">X</span>
+    </div>
+    <style>
+      #order-summary6{
+        text-align: center;
+        font-size: 25px;
+        
+      }
+      #details6{
+        margin-top: 60px;
+    margin-left: 120px;
+    
+      }
+      .list-order{
+        font-size: 21px;
+      }
+      #button06{
+        margin-left: 183px;
+    margin-top: 67px;
+      }
+    </style>
+    <div id="popupcontent6">
+      <h1 id="order-summary6"><strong>Order Summary</strong></h1>
+      <div id="details6">
+      <ul >
+        <li class="list-order"><strong>Item Name:</strong> BMW B38</li>
+        <li class="list-order"><strong>Category:</strong> Engin</li>
+        <li class="list-order"><strong>Item Price:</strong> Rs. 1,000,000 /- </li>
+        <li class="list-order"><strong>Deilivery Fee:</strong> Rs. 10,000 /-</li>
+        <li class="list-order"><strong>Total Price:</strong> Rs. 1,010,000 /-</li>
+        
+    
+      </ul>
+    </div>
+      <p>
+
+      </p>
+
+      <button id="button06"
+      class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0 buy">Place Order
+      </path>
+      </svg>
+    </button>
+    </div>
+    <!-- 7th -->
+  <div id="overlay7"></div>
+  <div id="popup7">
+    <div id="popupcontrols7">
+      <span id="popupclose7">X</span>
+    </div>
+    <style>
+      #order-summary7{
+        text-align: center;
+        font-size: 25px;
+        
+      }
+      #details7{
+        margin-top: 60px;
+    margin-left: 120px;
+    
+      }
+      .list-order{
+        font-size: 21px;
+      }
+      #button07{
+        margin-left: 183px;
+    margin-top: 67px;
+      }
+    </style>
+    <div id="popupcontent7">
+      <h1 id="order-summary7"><strong>Order Summary</strong></h1>
+      <div id="details7">
+      <ul >
+        <li class="list-order"><strong>Item Name:</strong> BMW B38</li>
+        <li class="list-order"><strong>Category:</strong> Engin</li>
+        <li class="list-order"><strong>Item Price:</strong> Rs. 1,000,000 /- </li>
+        <li class="list-order"><strong>Deilivery Fee:</strong> Rs. 10,000 /-</li>
+        <li class="list-order"><strong>Total Price:</strong> Rs. 1,010,000 /-</li>
+        
+    
+      </ul>
+    </div>
+      <p>
+
+      </p>
+
+      <button id="button07"
+      class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0 buy">Place Order
+      </path>
+      </svg>
+    </button>
+    </div>
+
+
+
+
+
+    <!-- 8th -->
+  <div id="overlay8"></div>
+  <div id="popup8">
+    <div id="popupcontrols8">
+      <span id="popupclose8">X</span>
+    </div>
+    <style>
+      #order-summary8{
+        text-align: center;
+        font-size: 25px;
+        
+      }
+      #details8{
+        margin-top: 60px;
+    margin-left: 120px;
+    
+      }
+      .list-order{
+        font-size: 21px;
+      }
+      #button08{
+        margin-left: 183px;
+    margin-top: 67px;
+      }
+    </style>
+    <div id="popupcontent8">
+      <h1 id="order-summary8"><strong>Order Summary</strong></h1>
+      <div id="details8">
+      <ul >
+        <li class="list-order"><strong>Item Name:</strong> BMW B38</li>
+        <li class="list-order"><strong>Category:</strong> Engin</li>
+        <li class="list-order"><strong>Item Price:</strong> Rs. 1,000,000 /- </li>
+        <li class="list-order"><strong>Deilivery Fee:</strong> Rs. 10,000 /-</li>
+        <li class="list-order"><strong>Total Price:</strong> Rs. 1,010,000 /-</li>
+        
+    
+      </ul>
+    </div>
+      <p>
+
+      </p>
+
+      <button id="button08"
+      class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0 buy">Place Order
+      </path>
+      </svg>
+    </button>
+    </div>
+
+
+       <!--8-->
+
+  
+       <script type="text/javascript">
+        // Initialize Variables
+        var closePopup = document.getElementById("popupclose8");
+        var overlay = document.getElementById("overlay8");
+        var popup = document.getElementById("popup8");
+        var button = document.getElementById("button15");
+        // Close Popup Event
+        closePopup.onclick = function () {
+          overlay.style.display = 'none';
+          popup.style.display = 'none';
+        };
+        // Show Overlay and Popup
+        button.onclick = function () {
+          overlay.style.display = 'block';
+          popup.style.display = 'block';
+        }
+      
+      
+      
+      </script> 
+
+     <!--7-->
+
+  
+     <script type="text/javascript">
+      // Initialize Variables
+      var closePopup = document.getElementById("popupclose7");
+      var overlay = document.getElementById("overlay7");
+      var popup = document.getElementById("popup7");
+      var button = document.getElementById("button14");
+      // Close Popup Event
+      closePopup.onclick = function () {
+        overlay.style.display = 'none';
+        popup.style.display = 'none';
+      };
+      // Show Overlay and Popup
+      button.onclick = function () {
+        overlay.style.display = 'block';
+        popup.style.display = 'block';
+      }
+    
+    
+    
+    </script> 
+
+
+     <!--6-->
+
+  
+<script type="text/javascript">
+  // Initialize Variables
+  var closePopup = document.getElementById("popupclose6");
+  var overlay = document.getElementById("overlay6");
+  var popup = document.getElementById("popup6");
+  var button = document.getElementById("button13");
+  // Close Popup Event
+  closePopup.onclick = function () {
+    overlay.style.display = 'none';
+    popup.style.display = 'none';
+  };
+  // Show Overlay and Popup
+  button.onclick = function () {
+    overlay.style.display = 'block';
+    popup.style.display = 'block';
+  }
+
+
+
+</script> 
+
+
+    <!--5-->
+
+  
+<script type="text/javascript">
+  // Initialize Variables
+  var closePopup = document.getElementById("popupclose5");
+  var overlay = document.getElementById("overlay5");
+  var popup = document.getElementById("popup5");
+  var button = document.getElementById("button12");
+  // Close Popup Event
+  closePopup.onclick = function () {
+    overlay.style.display = 'none';
+    popup.style.display = 'none';
+  };
+  // Show Overlay and Popup
+  button.onclick = function () {
+    overlay.style.display = 'block';
+    popup.style.display = 'block';
+  }
+
+
+
+</script> 
+   
+    <!--4-->
+
+  
+<script type="text/javascript">
+  // Initialize Variables
+  var closePopup = document.getElementById("popupclose4");
+  var overlay = document.getElementById("overlay4");
+  var popup = document.getElementById("popup4");
+  var button = document.getElementById("button11");
+  // Close Popup Event
+  closePopup.onclick = function () {
+    overlay.style.display = 'none';
+    popup.style.display = 'none';
+  };
+  // Show Overlay and Popup
+  button.onclick = function () {
+    overlay.style.display = 'block';
+    popup.style.display = 'block';
+  }
+
+
+
+</script> 
+    
+
+        <script type="text/javascript">
+      // Initialize Variables
+      var closePopup = document.getElementById("popupclose2");
+      var overlay = document.getElementById("overlay2");
+      var popup = document.getElementById("popup2");
+      var button = document.getElementById("button9");
+      // Close Popup Event
+      closePopup.onclick = function () {
+        overlay.style.display = 'none';
+        popup.style.display = 'none';
+      };
+      // Show Overlay and Popup
+      button.onclick = function () {
+        overlay.style.display = 'block';
+        popup.style.display = 'block';
+      }
+
+
+
+</script> 
+
+
+
+
+
+
+<!--1-->
+    <script type="text/javascript">
+      // Initialize Variables
+      var closePopup = document.getElementById("popupclose");
+      var overlay = document.getElementById("overlay");
+      var popup = document.getElementById("popup");
+      var button = document.getElementById("button");
+      // Close Popup Event
+      closePopup.onclick = function () {
+        overlay.style.display = 'none';
+        popup.style.display = 'none';
+      };
+      // Show Overlay and Popup
+      button.onclick = function () {
+        overlay.style.display = 'block';
+        popup.style.display = 'block';
+      }
+
+
+
+</script>
+
+
+
+<!--3-->
+
+  
+<script type="text/javascript">
+  // Initialize Variables
+  var closePopup = document.getElementById("popupclose3");
+  var overlay = document.getElementById("overlay3");
+  var popup = document.getElementById("popup3");
+  var button = document.getElementById("button10");
+  // Close Popup Event
+  closePopup.onclick = function () {
+    overlay.style.display = 'none';
+    popup.style.display = 'none';
+  };
+  // Show Overlay and Popup
+  button.onclick = function () {
+    overlay.style.display = 'block';
+    popup.style.display = 'block';
+  }
+
+
+
+</script> 
+
+
+
+
+
+
+
+
+</body>
+
+</html>
