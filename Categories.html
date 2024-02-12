@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="Images/Atoos-bg-remove.ico">
+    <title>Categories</title>
+
+
+   
+</head>
+<body>
+    
+
+    <header>
+        <div class="nav">
+        
+         
+            <div class="logo">
+                <a href="index.html"> <img src="Images/Atoos-bg-remove-removebg-preview.png" alt=""> </a>
+          
+
+            </div>
+            <div class="right">
+                <ul>
+                  <a href="index.html"><li id="li1">Products</li> </a>
+                  <a href="Categories.html" ><li id="li2">Categories</li> </a>
+                  <a href="contact.html" ><li id="li3">Contact Us</li></a>
+                  <a href="about.html" ><li id="li4">About Us</li></a>
+                   
+                   
+                </ul>
+                 <label for="check"><svg  aria-hidden="true"  class="menu" fill="none" viewBox="0 0 18 16">
+                        <path d="M1 .5a.5.5 0 100 1h15.71a.5.5 0 000-1H1zM.5 8a.5.5 0 01.5-.5h15.71a.5.5 0 010 1H1A.5.5 0 01.5 8zm0 7a.5.5 0 01.5-.5h15.71a.5.5 0 010 1H1a.5.5 0 01-.5-.5z" fill="currentColor">
+                      </path></svg></label>
+            </div>
+  
+                    </div>
+                    <input type="checkbox" id="check">  
+        <div class="menu-box">
+            <div class="close">
+        <label for="check2" >X</label></div>
+        <div class="menu-content">
+            <ul>
+                <a  class="no-link"  href="index.html"> <li id="li1">Products</li></a>
+                <a  class="no-link" href="Categories.html"><li id="li2">Categories</li></a> 
+                <a  class="no-link" href="contact.html"><li id="li3">Contact Us</li> </a>
+                 <a  class="no-link" href="about.html"><li id="li4">About Us</li> </a>
+                 
+                
+             </ul>
+         
+        </div>
+                    
+    </header>
+    <hr class="hr">
+
+
+
+
+    <main>
+
+
+
+            <div class="categories">
+                <div onclick="dothisone()" class="categori motorcycle"><img   src="Images/motorcycle.png" alt="">
+                    <span class="heading cate-head">Motor Cycle Parts </span>
+                    <span class="text-cate">At Abdullah Atoos, we carry a wide selection of motorcycle spare parts to keep your bike running
+                        smoothly and safely. We have parts for all makes and models of motorcycles.</span>
+                        <span class="cate-red">Learn More <svg  id="svg-arrow" fill="none" stroke="currentColor" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="2"  viewBox="0 0 24 24">
+                            <path d="M5 12h14M12 5l7 7-7 7"></path>
+                        </svg></span>
+                </div>
+                <div onclick="dothisone()"  class="categori "><img  src="Images/car.png" alt="">
+                    <span class="heading cate-head">Car Parts </span>
+                    <span class="text-cate">At Abdullah Atoos, we carry a wide selection of Car spare parts to keep your bike running
+                        smoothly and safely. We have parts for all makes and models of motorcycles, from
+                        the latest sportbikes.</span>
+                        <span class="cate-red">Learn More <svg  id="svg-arrow" fill="none" stroke="currentColor" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="2"  viewBox="0 0 24 24">
+                            <path d="M5 12h14M12 5l7 7-7 7"></path>
+                        </svg></span></div>
+                <div onclick="dothisone()"  class="categori "> <img  width="auto" height="266px" src="Images/truck.png" alt="">
+                    <span class="heading cate-head">Truck Parts </span>
+                    <span class="text-cate">At Abdullah Atoos, we carry a wide selection of Truck spare parts to keep your bike running
+                        smoothly and safely. We have parts for all makes and models of
+                        the latest sportbikes Parts.</span>
+                        <span class="cate-red">Learn More <svg  id="svg-arrow" fill="none" stroke="currentColor" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="2"  viewBox="0 0 24 24">
+                            <path d="M5 12h14M12 5l7 7-7 7"></path>
+                        </svg></span></div>
+            </div>
+    
+    
+    
+    <style>
+           .popup8 {
+        
+        
+        display: none;
+        position: absolute;
+        top: 44%;
+        left: 39%;
+        background: #fff;
+        width: 800px;
+        height: 500px;
+        margin-left: -250px;
+        /*Half the value of width to center div*/
+        margin-top: -250px;
+        /*Half the value of height to center div*/
+        z-index: 200;
+        }
+        @media only screen and (max-width:1024px) and (min-width:741px){
+    .popup8{
+      left:33%;
+    }
+    
+  }
+  @media only screen and (max-width:741px) and (min-width:400px){
+    .popup8{
+        position: absolute;
+    top: 44%;
+    left: 63%;
+    background: #fff;
+    width: 400px;
+    height: 1019px;
+    margin-left: -250px;
+    margin-top: -250px;
+    z-index: 200;
+    }
+    .container1{
+        flex-direction: column;
+        align-items: center;
+    }
+  }
+  @media only screen and (max-width:400px) and (min-width:300px){
+    .popup8{
+        position: absolute;
+    top: 44%;
+    left: 70%;
+    background: #fff;
+    width: 350px;
+    height: 1019px;
+    margin-left: -250px;
+    margin-top: -250px;
+    z-index: 200;
+    }
+    .container1{
+        flex-direction: column;
+        align-items: center;
+    }}
+  @media only screen and (max-width:299px) and (min-width:100px){
+    .popup8{
+        position: absolute;
+    top: 44%;
+    left: 70%;
+    background: #fff;
+    width: 350px;
+    height: 1019px;
+    margin-left: -250px;
+    margin-top: -250px;
+    z-index: 200;
+    }
+    .container1{
+        flex-direction: column;
+        align-items: center;
+    }
+  }
+
+
+    </style>
+            <div class="overlay8"></div>
+            <div class="popup8">
+                <div id="popupcontrols8">
+                    <span class="popupclose8">X</span>
+                </div>
+    <div id="popupcontent8">
+               
+        <div class="container1">
+                    
+            <div class="cont-items8"> <img class="no-margin img" src="Images/suspension.png" alt="">
+                <div class="details">
+                    <span class="text">Engin</span>
+                    <span class="heading">BMW B38</span>
+                    <span class="text">10 Lack Rupees</span>
+                    <button onclick="dothis()" class="btn">Buy Now <svg id="svg-arrow" fill="none" stroke="currentColor"
+                            stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+                            <path d="M5 12h14M12 5l7 7-7 7"></path>
+                        </svg></button>
+                </div>
+            </div>
+          
+    
+        <div class="cont-items8"> <img class=" no-margin img" src="Images/filter.png" alt="">
+            <div class="details">
+                <span class="text">Engin</span>
+                <span class="heading">BMW B38</span>
+                <span class="text">10 Lack Rupees</span>
+                <button class="btn buy">Buy Now <svg id="svg-arrow" fill="none" stroke="currentColor"
+                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg></button>
+            </div>
+        </div>
+     
+    
+        <div class="cont-items8"> <img class="no-margin img" src="Images/piston.png" alt="">
+            <div class="details">
+                <span class="text">Engin</span>
+                <span class="heading">BMW B38</span>
+                <span class="text">10 Lack Rupees</span>
+                <button onclick="dothis()" class="btn buy">Buy Now <svg id="svg-arrow" fill="none"
+                        stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        viewBox="0 0 24 24">
+                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg></button>
+            </div>
+        </div>
+    
+    
+    
+    
+    
+     <script type="text/javascript">
+        // Initialize Variables
+        const closePopup = document.querySelector('.popupclose8');
+        const overlay = document.querySelector('.overlay8');
+        const popup = document.querySelector('.popup8');
+        const button = document.querySelector('.buy');
+    
+    
+        // Close Popup Event
+        closePopup.onclick = function () {
+            overlay.style.display = 'none';
+            popup.style.display = 'none';
+        };
+    
+        function dothisone() {
+            // Your code to execute when any button is clicked
+            overlay.style.display = 'block';
+            popup.style.display = 'block';
+        }
+    </script>
+
+
+
+
+
+
+
+    </main>
+
+
+    <footer>
+        <div class="foot">
+
+            <div class="test">
+
+            <div class="logo">
+                <a href="index.html"> <img src="Images/Atoos-bg-remove-removebg-preview.png" alt=""> </a>
+
+            </div>
+     <div class="copyright">
+        <span class="text">© 2024 Abdullah Atoos </span>
+     </div></div>
+
+     
+            <div class="right right-footer">
+                <a href=""><svg class="svg" fill="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                    </svg></a>
+                <a href=""><svg class="svg" fill="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path
+                            d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                        </path>
+                    </svg></a>
+                <a href=""><svg class="svg" fill="none" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                    </svg></a>
+                <a href=""><svg class="svg" fill="currentColor" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path stroke="none"
+                            d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z">
+                        </path>
+                        <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                    </svg></a>
+                
+            </div>
+        </div>
+        
+    </footer>
+
+    <style>
+   
+   
+   
+     
+    </style>
+
+<input type="checkbox" id="check2">
+
+
+
+
+<script>
+    const yourCheckbox = document.getElementById('check2');
+    const realcheckbox = document.getElementById('check');
+
+
+    yourCheckbox.addEventListener("change", function() {
+  realcheckbox.checked = !this.checked; // Uncheck checkbox2 when checkbox1 is checked
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
